@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-ai-q9x">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkW-sx-lOy">
+                                <rect key="frame" x="70" y="682" width="277" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtoDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nTJ-F3-cjb"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lo2-8k-W21">
+                                <rect key="frame" x="21" y="313" width="374" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHO-lC-83w">
+                                <rect key="frame" x="0.0" y="807" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZXS-4v-gY7"/>
+                                    <constraint firstAttribute="height" constant="40" id="mHz-Lm-3Zt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <connections>
+                                    <action selector="amazingButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILv-sV-e6R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoK-eN-X2G">
+                                <rect key="frame" x="142" y="123" width="133" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syA-dH-uTw">
+                                <rect key="frame" x="1" y="793" width="414" height="38.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="DCr-IU-aZ2"/>
+                                    <constraint firstAttribute="height" constant="28" id="Pjt-eM-HYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" red="0.94092631860794596" green="1" blue="0.035550201073319743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DCr-IU-aZ2"/>
+                                        <exclude reference="Pjt-eM-HYf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ylo-ai-q9x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="37g-fZ-kDr"/>
+                            <constraint firstItem="syA-dH-uTw" firstAttribute="bottom" secondItem="Ylo-ai-q9x" secondAttribute="bottom" constant="-50" id="BjO-mp-WhP"/>
+                            <constraint firstAttribute="trailing" secondItem="Ylo-ai-q9x" secondAttribute="trailing" id="Cjn-Li-Pn9"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="centerY" secondItem="Ylo-ai-q9x" secondAttribute="centerY" id="Cud-QT-kYd"/>
+                            <constraint firstItem="MHO-lC-83w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HUY-Lo-pwv"/>
+                            <constraint firstAttribute="bottom" secondItem="Ylo-ai-q9x" secondAttribute="bottom" id="L2e-lr-vhB"/>
+                            <constraint firstItem="syA-dH-uTw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PcG-kP-xOy"/>
+                            <constraint firstItem="syA-dH-uTw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q16-zJ-OCy"/>
+                            <constraint firstItem="syA-dH-uTw" firstAttribute="centerX" secondItem="Lo2-8k-W21" secondAttribute="centerX" id="RhR-rd-aeI"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Seu-lF-alb"/>
+                            <constraint firstItem="Ylo-ai-q9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Stv-CT-Qmp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lo2-8k-W21" secondAttribute="trailing" constant="-17" id="TVl-dv-CoD"/>
+                            <constraint firstAttribute="trailing" secondItem="syA-dH-uTw" secondAttribute="trailing" id="VuY-6S-Xca"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lo2-8k-W21" secondAttribute="trailing" id="XwU-Hw-XfQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="syA-dH-uTw" secondAttribute="bottom" constant="54" id="pLL-BC-c33"/>
+                            <constraint firstItem="Ylo-ai-q9x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sdq-Oz-8zI"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="centerX" secondItem="syA-dH-uTw" secondAttribute="centerX" id="tBk-sY-waH"/>
+                            <constraint firstItem="Lo2-8k-W21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="ufB-c0-kHg"/>
+                            <constraint firstItem="MHO-lC-83w" firstAttribute="centerY" secondItem="syA-dH-uTw" secondAttribute="centerY" id="zI9-sq-knD"/>
+                            <constraint firstItem="Ylo-ai-q9x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zyk-Iw-Guh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TVl-dv-CoD"/>
+                                <exclude reference="tBk-sY-waH"/>
+                                <exclude reference="ufB-c0-kHg"/>
+                                <exclude reference="Q16-zJ-OCy"/>
+                                <exclude reference="pLL-BC-c33"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="Lo2-8k-W21" id="FZt-4i-2zb"/>
+                        <outlet property="goButton" destination="wkW-sx-lOy" id="QYN-43-nL6"/>
+                        <outlet property="resultLabel" destination="syA-dH-uTw" id="Vbn-Ao-sfx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="338.83928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>
